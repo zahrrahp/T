@@ -1,0 +1,121 @@
+.s-mt{
+  margin-top: -90px;
+}
+
+.PortfolioSlider{
+
+
+  .portfolio-box{
+    .portfolio-img{
+      position: relative;
+      overflow: hidden;
+      border-radius: $radius;
+      transition: all 0.5s ease-in-out;
+
+      &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        z-index: 9;
+        background: $dark-color;
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
+      }
+
+      a{
+        color: $primary-color;
+        transition: all 0.5s ease-in-out;
+
+        img{
+          display: block;
+          width: 100%;
+        }
+      }
+    }
+
+
+    .portfolio-info{
+      background: $white-color;
+      padding: 15px;
+      text-align: center;
+      color: $primary-color;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      /*font-size: 28px;*/
+      @include rfs(28px);
+      line-height: 36px;
+      opacity: 0;
+      border-radius: $radius;
+      z-index: 99;
+      width: 80%;
+      transition: all 0.5s ease-in-out;
+
+      a{
+        position: relative;
+        color: $primary-color;
+        font-family: $title-fonts;
+        /*font-size: 14px;*/
+        @include rfs(14px);
+        line-height: 22px;
+        padding: 0 15px 0 0;
+
+        }
+      .a-after{
+        &::after{
+          position: absolute;
+          content: '/';
+          top: 5px;
+          margin-right: 5px;
+          font-family: $title-fonts;
+          /*font-size: 12px;*/
+          @include rfs(12px);
+          line-height: inherit;
+          color: $secondary-color;
+        }
+      }
+
+      h5{
+        a{
+          color: $dark-color;
+          /*font-size: 28px;*/
+          @include rfs(28px);
+          line-height: 36px;
+        }
+      }
+    }
+
+
+    &:hover{
+      .portfolio-img{
+        &::before{
+          opacity: 0.8;
+        }
+      }
+
+      .portfolio-info{
+        opacity: 1;
+      }
+    }
+  }
+
+} // .PortfolioSlider
+
+@include media-breakpoint-down(sm){
+  .PortfolioSlider{
+    .portfolio-box{
+      .portfolio-info{
+        h5 {
+          a {
+            /*font-size: 16px;*/
+          }
+        }
+      }
+    }
+  }
+}

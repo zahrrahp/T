@@ -1,0 +1,70 @@
+.overlay-loading{
+  width: 100%;
+  height: 100%;
+  background-color: $white-color;
+  z-index: 10000;
+  position: fixed;
+
+  .loading{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    img{
+      width: 300px;
+      margin: 0 10px;
+    }
+
+    span{
+      width: 10px;
+      height: 10px;
+      display: block;
+      background-color: $primary-color;
+      border-radius: 50%;
+      margin: 0 3px;
+      margin-top: 10px;
+      box-shadow: 1px 1px 2px $dark-color;
+      animation: zoom;
+      animation-duration: 0.5s;
+      animation-iteration-count: infinite;
+    }
+
+    .zoom1{
+      animation-delay: 0.01s;
+    }
+    .zoom2{
+      animation-delay: 0.03s;
+    }
+    .zoom3{
+      animation-delay: 0.06s;
+    }
+    .zoom4{
+      animation-delay: 0.01s;
+    }
+    .zoom5{
+      animation-delay: 0.03s;
+    }
+    .zoom6{
+      animation-delay: 0.06s;
+    }
+
+  }
+}
+
+/*///////////////////////////////////*/
+@include media-breakpoint-down(sm){
+  .overlay-loading{
+    .loading {
+      img {
+        width: 100px;
+      }
+      span{
+        width: 5px;
+        height: 5px;
+        margin-top: initial;
+      }
+    }
+  }
+}

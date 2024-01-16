@@ -1,0 +1,54 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        link(rel="icon" href="./images/logo-title.webp")
+        title Techtrix
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(href="./node_modules/normalize.css/normalize.css" rel="stylesheet")
+        link(href="./node_modules/animate.css/animate.min.css" rel="stylesheet")
+        link(href="./node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css" rel="stylesheet")
+        link(href="./node_modules/@fortawesome/fontawesome-free/css/solid.min.css" rel="stylesheet")
+        link(href="./node_modules/@fortawesome/fontawesome-free/css/brands.min.css" rel="stylesheet")
+
+
+        link(href="./css/bootstrap-custom.css" rel="stylesheet")
+        link(href="./node_modules/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet")
+        link(href="./node_modules/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet")
+        link(href="./css/style.css" rel="stylesheet")
+
+        script(type="module" src="./scripts/RoughNotation.js")
+
+
+    body
+
+        .overlay-loading
+            .loading
+                span.zoom6
+                span.zoom5
+                span.zoom4
+                img(src="images/logo-loading.png" alt="")
+                span.zoom3
+                span.zoom2
+                span.zoom1
+
+
+        include header
+
+        main#main-contact
+            block main
+
+        include footer
+
+
+        script(src="./node_modules/jquery/dist/jquery.min.js")
+        script(src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js")
+        script(src="./node_modules/owl.carousel/dist/owl.carousel.min.js")
+
+
+        script(src="./scripts/index.js")
+        script(src="./scripts/owlcarousel.js")
+
+
+
+

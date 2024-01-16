@@ -1,0 +1,187 @@
+.about {
+
+  .contain-text {
+    margin-bottom: 30px;
+  }
+
+  // .contain-text
+
+
+  .parent-box {
+    .item-about {
+      display: flex;
+      align-items: center;
+      border-bottom: 2px solid $grey-color;
+      margin-bottom: 15px;
+      padding-bottom: 15px;
+
+
+      img {
+        width: 90px;
+        margin-left: 15px;
+      }
+
+
+      .item-title {
+        line-height: 1.5;
+      }
+    }
+  }
+
+  // .parent-box
+
+
+  .my-button {
+    font-family: $title-fonts;
+    /*font-size: 16px;*/
+    @include rfs(16px);
+    padding: 12px 45px;
+    line-height: 2;
+    position: relative;
+    width: auto;
+    background: $primary-color;
+    color: $white-color;
+    vertical-align: middle;
+    display: inline-block;
+    overflow: hidden;
+    @include border-radius($radius);
+    transition: all 0.3s;
+
+    &:hover {
+      background: $dark-color;
+      color: $white-color;
+    }
+  }
+
+
+  .about-img {
+    position: relative;
+
+    img {
+      width: 100%;
+      border-radius: $radius;
+    }
+
+    .count {
+      position: absolute;
+      bottom: -10%;
+      right: -9%;
+      padding: 30px;
+      line-height: 5;
+      border-radius: $radius;
+      margin-top: 15px;
+      background: $white-color;
+      box-shadow: 0 0 30px 0 rgba(21, 21, 21, 0.1);
+
+
+      .count-content {
+        text-align: center;
+
+        .number {
+          display: inline-flex;
+          flex-direction: row-reverse;
+          align-items: center;
+          /*font-size: 69px;*/
+          @include rfs(69px);
+          font-family: Arial, sans-serif;
+          font-weight: 600;
+          color: $primary-color;
+
+          h5 {
+            color: $primary-color;
+            /*font-size: 100px;*/
+            @include rfs(100px);
+            display: inline-block;
+            margin: 0;
+          }
+        }
+
+        .count-description {
+          color: $dark-color;
+          font-family: $title-fonts;
+          /*font-size: 26px;*/
+          @include rfs(26px);
+          font-weight: 600;
+          line-height: 1.2;
+        }
+      }
+    }
+
+  }
+
+  // .about-img
+}
+// .about
+
+/*//////////////////////////////////////////////////////////*/
+
+@include media-breakpoint-down(xxl) {
+  .about {
+    .about-img {
+      .count {
+        bottom: 0;
+        right: 0;
+        padding: 30px;
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(lg){
+  .about {
+    .about-img {
+      .count {
+        .count-content {
+          .number {
+           /* font-size: 45px;*/
+            line-height: 69px;
+
+            h5 {
+              /*font-size: 70px;*/
+            }
+          }
+
+          .count-description {
+           /* font-size: 16px;*/
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm){
+  .about {
+    .parent-box {
+      .info-box{
+        p{
+          /*font-size: 12px;*/
+        }
+      }
+    }
+    .about-img {
+      .count {
+        padding: 20px;
+        padding-bottom: 0;
+        /*line-height: 5;*/
+        .count-content {
+          .number {
+            /*font-size: 45px;*/
+            line-height: 0;
+
+            h5 {
+              /*font-size: 35px;*/
+            }
+          }
+
+        }
+      }
+    }
+
+    .my-button {
+      /*font-size: 12px;*/
+      padding: 10px 25px;
+    }
+  }
+}

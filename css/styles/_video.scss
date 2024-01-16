@@ -1,0 +1,60 @@
+.video{
+  background-color: $dark-color;
+
+  &::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    opacity: 0.05;
+    background: url("https://peacefulqode.com/themes/techtrix/html/images/bg-images/2.png");
+    background-position: center center;
+    background-repeat: repeat;
+    background-attachment: scroll;
+  }
+
+
+  .styleT.text-center{
+    h5{
+      span{
+        color: $white-color;
+      }
+    }
+
+    p{
+      color: $white-color;
+    }
+  }
+
+  .mt-30{
+    margin-top: 30px;
+  }
+
+  .video-box{
+    .video-icon{
+
+
+      a{
+        position: relative;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        color: $primary-color;
+        font-size: 28px;
+        width: 90px;
+        height: 90px;
+        line-height: 90px;
+        text-align: center;
+        background-color: $white-color;
+        border-radius: 90%;
+        animation: ripple 1s linear infinite;
+      }
+    }
+  }
+
+} // .video

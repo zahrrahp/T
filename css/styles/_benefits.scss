@@ -1,0 +1,142 @@
+.benefits {
+  background-color: $dark-color;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    opacity: 0.05;
+    background-image: url('https://peacefulqode.com/themes/techtrix/html/images/bg-images/2.png');
+    background-position: center center;
+    background-repeat: repeat;
+    background-attachment: fixed;
+  }
+
+
+  h5 {
+    span {
+      color: $white-color;
+    }
+  }
+
+  img {
+    position: absolute;
+    z-index: 10;
+  }
+
+  .progressbar-box {
+
+    margin-top: 35px;
+
+
+    .progressbar-content {
+      margin-bottom: 30px;
+      display: inline-block;
+      float: left;
+      width: 100%;
+
+      .progressbar-title {
+        margin: 0;
+        /*font-size: 20px;*/
+        @include rfs(20px);
+        line-height: 28px;
+        font-family: $title-fonts;
+        color: $white-color;
+        font-weight: 700;
+      }
+
+      .progressbar-value {
+        color: $white-color;
+        margin: 0;
+        float: left;
+        /*font-size: 20px;*/
+        @include rfs(20px);
+        line-height: 28px;
+        font-weight: 800;
+      }
+
+
+      .progress-bar {
+        display: inline-block;
+        width: 100%;
+        padding: 0;
+        background: $grey-color;
+        float: left;
+        margin-top: 5px;
+        border-radius: $radius;
+
+
+        span {
+          height: 5px;
+          display: inline-block;
+          background: $primary-color;
+          float: right;
+          border-radius: $radius;
+        }
+      }
+
+      &:nth-child(1) {
+        .progress-bar {
+          span {
+            width: 85%;
+          }
+        }
+      }
+
+      &:nth-child(2) {
+        .progress-bar {
+          span {
+            width: 92%;
+          }
+        }
+      }
+
+      &:nth-child(3) {
+        .progress-bar {
+          span {
+            width: 80%;
+          }
+        }
+      }
+
+    }
+
+  }
+
+  //progressbar-box
+
+}
+
+// benefits
+
+@media (max-width: 1279px) {
+  .benefits {
+    img {
+      position: relative;
+      width: 100%;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .benefits {
+    .progressbar-box {
+      .progressbar-content {
+        margin-bottom: 20px;
+        .progressbar-title {
+         /* font-size: 14px;*/
+          line-height: initial;
+        }
+
+        .progressbar-value {
+          /*font-size: 14px;*/
+          line-height: initial;
+        }
+      }
+    }
+  }
+}

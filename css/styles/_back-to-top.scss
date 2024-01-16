@@ -1,0 +1,33 @@
+.back-to-top{
+
+  .back-top{
+    font-family: Calibri, sans-serif;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    margin: 0;
+    color: $white-color;
+    background: $primary-color;
+    z-index: 999;
+    border: 1px solid $primary-color;
+    /*font-size: 26px;*/
+    @include rfs(26px);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+
+    &:hover{
+      background: $dark-color;
+      color: $white-color;
+      border: 1px solid $dark-color;
+      box-shadow: 0 0 4px 0 rgb(125 125 125 / 10%);
+    }
+  }
+}
+
+#backTop{
+  display: none;
+}

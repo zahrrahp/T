@@ -1,0 +1,35 @@
+@font-face {
+  font-family: My-Yekan;
+  font-weight: normal;
+  src: url("fonts/iranyekan/ttf/iranyekanwebregular.ttf") format("truetype"),
+  url("fonts/iranyekan/svg/iranyekanwebregular.svg") format("svg"),
+  url("fonts/iranyekan/woff/iranyekanwebregular.woff") format("woff");
+}
+
+@font-face {
+  font-family: My-Yekan;
+  font-weight: bold;
+  src: url("fonts/iranyekan/ttf/iranyekanwebbold.ttf") format("truetype"),
+  url("fonts/iranyekan/svg/iranyekanwebbold.svg") format("svg"),
+  url("fonts/iranyekan/woff/iranyekanwebbold.woff") format("woff");
+}
+
+@font-face {
+  font-family: Pinar;
+  font-weight: normal;
+  src: url("fonts/pinar/Pinar-Regular.ttf") format("truetype"),
+  url("fonts/pinar/Pinar-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Pinar;
+  font-weight: bold;
+  src: url("fonts/pinar/Pinar-Bold.ttf") format("truetype"),
+  url("fonts/pinar/Pinar-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Doman;
+  font-weight: normal;
+  src: url("fonts/doman/Doman(@fonts_land).ttf") format("truetype")
+}
